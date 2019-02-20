@@ -21,6 +21,7 @@ class ThirdViewController: UIViewController {
     var time = 61;
     var timer = Timer();
     
+    @IBOutlet weak var getPointsDisplay: UILabel!
     @IBOutlet weak var timerDisplay: UILabel!
     @IBOutlet weak var numDisplay: UILabel!
     @IBOutlet weak var addDisplay: UILabel!
@@ -30,6 +31,7 @@ class ThirdViewController: UIViewController {
     @IBAction func scoreButton(_ sender: UIButton) {
         time = 61
         gameStarted = true
+        store = addOne.randomNum()
         addDisplay.text = store.0
         addOne.score = 0;
         scoreDisplay.text = String(addOne.score)
@@ -53,13 +55,14 @@ class ThirdViewController: UIViewController {
                 numDisplay.text = numDisplay.text! + String(sender.tag-1)
                 if(numDisplay.text == store.1) {
                     playWinSound();
+                    numDisplay.text = ""
                     store = addOne.randomNum()
                     addDisplay.text = store.0
-                    numDisplay.text = ""
                     addOne.score = addOne.score+5
                     UIView.animate(withDuration: 0.2, delay: 0.0, options: [],
                                    animations: {
                                     self.addDisplay.center.y -= self.view.bounds.height
+                                    self.scoreDisplay.center.y -= 5
                     },
                                    completion: nil
                     );
@@ -67,6 +70,7 @@ class ThirdViewController: UIViewController {
                     UIView.animate(withDuration: 0.2, delay: 0.2, options: [],
                                    animations: {
                                     self.addDisplay.center.y += self.view.bounds.height
+                                    self.scoreDisplay.center.y += 5
                     },
                                    completion: nil
                     );
@@ -74,10 +78,44 @@ class ThirdViewController: UIViewController {
                 }
                 else {
                     playFailSound();
-                    numDisplay.text = ""
+                    
                     addOne.score = addOne.score-5
                     scoreDisplay.text = String(addOne.score)
                     i = 0
+                    
+                    UIView.animate(withDuration: 0.2, delay: 0.0, options: [],
+                                   animations: {
+                                    self.scoreDisplay.center.y += 5
+                    },
+                                   completion: nil
+                    );
+                    UIView.animate(withDuration: 0.2, delay: 0.2, options: [],
+                                   animations: {
+                                    self.scoreDisplay.center.y -= 5
+                    },
+                                   completion: nil
+                    );
+                    
+                    UIView.animate(withDuration: 0.1, delay: 0.0, options: [],
+                                   animations: {
+                                    self.addDisplay.center.x -= 10
+                    },
+                                   completion: nil
+                    );
+                    UIView.animate(withDuration: 0.1, delay: 0.1, options: [],
+                                   animations: {
+                                    self.addDisplay.center.x += 20
+                    },
+                                   completion: nil
+                    );
+                    UIView.animate(withDuration: 0.1, delay: 0.2, options: [],
+                                   animations: {
+                                    self.addDisplay.center.x -= 10
+                    },
+                                   completion: nil
+                    );
+                    
+                    numDisplay.text = ""
                 }
             }
         }
@@ -94,10 +132,17 @@ class ThirdViewController: UIViewController {
         }
         else if(!timerOn) {
             i = 0;
+            timerDisplay.text = ""
             numDisplay.text = ""
+            addDisplay.text = ""
             gameStarted = false;
             timer.invalidate()
-            scoreButton.setTitle("Grattis! Du fick " + String(addOne.score) + " poäng!", for: .normal)
+            if(addOne.score > 0) {
+                scoreButton.setTitle(NSLocalizedString("Congratulations!", comment: "") + " " + String(addOne.score) + " " + NSLocalizedString("Points!", comment: ""), for: .normal)
+            }
+            else if(addOne.score <= 0){
+                scoreButton.setTitle(NSLocalizedString("You got", comment: "") + " " + String(addOne.score) + " " + NSLocalizedString("Points!", comment: ""), for: .normal)
+            }
             scoreButton.isHidden = false
         }
     }
@@ -138,12 +183,9 @@ class ThirdViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        scoreButton.setTitle("Start", for: .normal)
+        scoreButton.setTitle(NSLocalizedString("Start", comment: "") , for: .normal)
         numDisplay.text = ""
-        timerDisplay.text = "";
-        store = addOne.randomNum()
-        print(store.0, "store0")
-        print(store.1, "store1")
+        timerDisplay.text = ""
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

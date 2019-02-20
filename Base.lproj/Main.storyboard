@@ -177,7 +177,7 @@
                                     <constraint firstAttribute="width" constant="75" id="KAy-jf-oMA"/>
                                     <constraint firstAttribute="height" constant="53" id="WeN-Zp-QcC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -336,6 +336,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <size key="titleShadowOffset" width="3" height="2"/>
                                         <state key="normal" title="Calculator">
                                             <color key="titleColor" red="0.083156245140000001" green="1" blue="0.23380794099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -347,6 +348,7 @@
                                         <rect key="frame" x="0.0" y="448" width="414" height="448"/>
                                         <color key="backgroundColor" red="1" green="0.12678743922880631" blue="0.16022186095172097" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <size key="titleShadowOffset" width="3" height="2"/>
                                         <state key="normal" title="AddOne">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -426,7 +428,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFm-vc-zb9">
-                                        <rect key="frame" x="310" y="299" width="103" height="149"/>
+                                        <rect key="frame" x="311" y="298" width="103" height="151"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.083156245140000001" green="1" blue="0.23380794099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
@@ -462,7 +464,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noc-cY-Adp">
-                                        <rect key="frame" x="208" y="298" width="102" height="151"/>
+                                        <rect key="frame" x="208" y="298" width="103" height="151"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
@@ -474,7 +476,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baS-eE-7y2">
-                                        <rect key="frame" x="310" y="148" width="103" height="151"/>
+                                        <rect key="frame" x="311" y="148" width="103" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.083156245140000001" green="1" blue="0.23380794099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
@@ -498,7 +500,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfC-hC-50P">
-                                        <rect key="frame" x="208" y="0.0" width="102" height="148"/>
+                                        <rect key="frame" x="208" y="0.0" width="103" height="148"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
@@ -534,7 +536,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-tf-cUi">
-                                        <rect key="frame" x="208" y="148" width="102" height="150"/>
+                                        <rect key="frame" x="208" y="148" width="103" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
@@ -546,7 +548,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idB-Ha-jiF">
-                                        <rect key="frame" x="310" y="448" width="103" height="148"/>
+                                        <rect key="frame" x="311" y="449" width="103" height="147"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.083156245140000001" green="1" blue="0.23380794099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
@@ -558,7 +560,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcg-ie-5lP">
-                                        <rect key="frame" x="208" y="449" width="102" height="148"/>
+                                        <rect key="frame" x="208" y="449" width="103" height="147"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.083156245140000001" green="1" blue="0.23380794099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -582,7 +584,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3r-Qj-nvx">
-                                        <rect key="frame" x="310" y="0.0" width="103" height="148"/>
+                                        <rect key="frame" x="311" y="0.0" width="103" height="148"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.083156245140000001" green="1" blue="0.23380794099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
@@ -685,13 +687,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZg-Uy-HIy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-59.598214285714285" y="20.289855072463769"/>
+            <point key="canvasLocation" x="-60.869565217391312" y="19.419642857142858"/>
         </scene>
     </scenes>
     <resources>
         <image name="space1.jpg" width="2880" height="1800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wil-9Z-ClK"/>
+        <segue reference="aP8-oo-ghM"/>
     </inferredMetricsTieBreakers>
 </document>
