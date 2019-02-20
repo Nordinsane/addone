@@ -15,7 +15,7 @@ class SecondViewController: UIViewController {
     var hassum: Bool = false;
     var clear: Bool = false;
     var mathInteraction = false;
-    let math = Math(score: 0, previousValue: 0, currentValue: 0)
+    let math = Math(previousValue: 0, currentValue: 0)
 
     @IBOutlet weak var numDisplay: UILabel!
     @IBOutlet weak var preNumDisplay: UILabel!
