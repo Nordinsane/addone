@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  myCalculator
+//  AddOne
 //
 //  Created by Kim Nordin on 2019-02-01.
 //  Copyright © 2019 kim. All rights reserved.

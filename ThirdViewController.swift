@@ -1,6 +1,6 @@
 //
 //  ThirdViewController.swift
-//  myCalculator
+//  AddOne
 //
 //  Created by Kim Nordin on 2019-02-04.
 //  Copyright © 2019 kim. All rights reserved.
@@ -21,12 +21,12 @@ class ThirdViewController: UIViewController {
     var time = 61;
     var timer = Timer();
     
-    @IBOutlet weak var getPointsDisplay: UILabel!
     @IBOutlet weak var timerDisplay: UILabel!
     @IBOutlet weak var numDisplay: UILabel!
     @IBOutlet weak var addDisplay: UILabel!
     @IBOutlet weak var scoreDisplay: UILabel!
     @IBOutlet weak var scoreButton: UIButton!
+    @IBOutlet weak var helpButton: UIButton!
     
     @IBAction func scoreButton(_ sender: UIButton) {
         time = 61
@@ -39,6 +39,7 @@ class ThirdViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ThirdViewController.action), userInfo: nil, repeats: true)
         scoreButton.setTitle("", for: .normal)
         scoreButton.isHidden = true
+        helpButton.isHidden = true
     }
     
     func score() {
@@ -144,6 +145,7 @@ class ThirdViewController: UIViewController {
                 scoreButton.setTitle(NSLocalizedString("You got", comment: "") + " " + String(addOne.score) + " " + NSLocalizedString("Points!", comment: ""), for: .normal)
             }
             scoreButton.isHidden = false
+            helpButton.isHidden = false
         }
     }
     @IBAction func backChrButton(_ sender: UIButton) {
